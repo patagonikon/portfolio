@@ -1,0 +1,116 @@
+*{margin:0;padding:0;}
+a{text-decoration: none; color:#fff}
+body{
+    overflow-y:hidden;
+}
+
+
+
+.start{
+    position: relative;
+    width:1920px;
+    height:1080px;
+    margin:0 auto;
+}
+
+
+
+
+
+
+.abc1{
+    position: absolute;
+    width:348px;
+    height:80px;
+    /* border:1px solid red; */
+    z-index: 11;
+    left:29%;
+    top:225px;
+    background: url(../img/abc1.PNG)no-repeat;
+    animation: lo 3s forwards; /*forwards 영상 끝부분이 계속 유지되도록 해주는 코드 포워즈*/
+    opacity: 0;
+}
+
+@keyframes lo{
+    0%{opacity: 0; top:120px;}
+    100%{opacity: 1 ;top:230px;}
+}
+
+
+
+
+.abc2{
+    position: absolute;
+    width:548px;
+    height:100px;
+    /* border:1px solid red; */
+    z-index: 11;
+    left:47%;
+    top:225px;
+    background: url(../img/abc2.PNG)no-repeat;
+    
+    animation: to 3s forwards; /*forwards 영상 끝부분이 계속 유지되도록 해주는 코드 포워즈*/
+    opacity: 0;
+}
+
+
+@keyframes to{
+0%{opacity: 0; top:320px;}
+100%{opacity: 1 ;top:230px;}
+}
+
+
+
+.red_logo{
+
+    position: absolute;
+    width:158px;
+    height:108px;
+    /* border:1px solid red; */
+    z-index: 20;
+    left:46%;
+    top:0px;
+    background: url(../img/red_logo.png)no-repeat;
+    animation: da 4s forwards; /*forwards 영상 끝부분이 계속 유지되도록 해주는 코드 포워즈*/
+    opacity: 0;
+}
+
+
+@keyframes da{
+0%{opacity: 0; top:300px;}
+100%{opacity: 1 ;top:400px;}
+}
+
+
+
+
+
+
+
+.pp{
+    position: absolute;
+    width:150px;
+    height:20px;
+    border:1px solid red;
+    background-color: red;
+    border-radius: 15px;
+    z-index: 10;
+    top:60%;
+    left:46%;
+    animation:intro 0.5s infinite alternate;
+}
+
+@keyframes intro{
+    0%{top:550px;}
+    100%{top:540px;}
+}
+
+
+
+
+.pp p{
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    color:#fff;
+}

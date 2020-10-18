@@ -1,0 +1,782 @@
+*{margin:0; padding:0;}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+.cf:after{
+    display: block;
+    content:"";
+    clear:both;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* ================================================================================== */
+
+
+header{
+    width:100%;
+    height:150px;
+    margin:0 auto;
+}
+ 
+.mine_nav{
+    position: relative;
+    margin:0 auto;
+    width:1920px;
+    height:150px;
+    /* border:1px solid red; */
+    box-sizing: border-box;
+    background: url(../img/joo_ba.jpg)no-repeat;
+}
+
+.bigbox{
+    width:1100px;
+    margin:0 auto;
+    position: relative;
+    height:60px;
+    /* border:1px solid red; */
+}
+
+.big1{
+    position: absolute;
+    width:130px;
+    height:20px;
+    bottom:13px;
+    left:50px;
+    /* border:1px solid turquoise; */
+}
+.big1 p{
+    font-size: 15px;
+    font-weight: bold;
+    color:#bbb;
+}
+
+.big2>ul{
+    position: absolute;
+    width:260px;
+    height:30px;
+    /* border:1px solid turquoise; */
+    right:15%;
+    top:25px;
+}
+.big2>ul>li{
+    float:left;
+}
+
+.big2>ul>li>a{
+    color:#333;
+    display: block;
+    padding:0 10px;
+    line-height: 30px;
+    position: relative; 
+
+}
+
+.big2>ul>li a:after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 12px;
+    background-color: #c6c6c6;
+    position: absolute;
+    right:0px;
+    top: 9px;
+}
+
+
+.big3{
+    position: absolute;
+    width:230px;
+    height:20px;
+    bottom:13px;
+    right:-6%;
+    /* border:1px solid turquoise; */
+}
+
+
+.big3 img{
+    margin-left:12px;
+}
+
+/* 팝업 사이드 */
+
+.pop_up{
+    position: fixed;
+    z-index: 5;
+    right:2%;
+    top:16%;
+    cursor: pointer;
+}
+
+
+
+.yogerpresso_logo{
+    position: absolute;
+    left:24%;
+    top:83px;
+    width:250px;
+    height:50px;
+    background: url(../img/logo.png)no-repeat;
+    cursor: pointer;
+}
+
+
+.mine_nav>ul{
+    position: absolute;
+    left:53%;
+    top:55px;
+    width:1600px;
+    z-index: 11;
+
+}
+
+.mine_nav>ul>li{
+    float:left;
+    margin-left:-30px;
+    font-size: 18px;
+    padding:10px 0;
+    font-weight: bold;
+    text-align: center;
+   
+}
+
+.mine_nav>ul>li:hover>a{
+    color:#ac1a2d;
+}
+
+.mine_nav>ul>li>a{
+    display: block;
+    width:150px;
+    height:100%;
+    padding-left:5px;
+    line-height: 50px;
+    color:#555;
+    
+}
+
+.mine_nav>ul>li>ul{
+    width:150px;
+    height:260px;
+    /* border-right:1px solid #ccc; */
+    text-align: left;
+    z-index: 10;
+    margin-top:10px;
+    position: absolute;
+    display: none;
+}
+
+
+.mine_nav>ul:hover>li>ul{
+    display: block;
+}
+
+
+.mine_nav>ul>li>ul>li{
+    text-align: center;
+    margin-top:2px;
+}
+
+
+.mine_nav>ul>li>ul>li:hover>a{
+    color:#000;
+}
+
+.mine_nav ul ul a{
+    font-size: 14px;
+    display: block;
+    padding:5px 0;
+    padding-left:15px;
+    color:#bbb;
+    opacity: 0.5;
+}
+
+.shadow{
+    position: absolute;
+    width:100%;
+    height:0;
+    top:150px;
+    background-color: #fff;
+    /* overflow: hidden; */
+    z-index: 10;
+    transition: all 0.3s;
+}
+
+.mine_nav > ul:hover + .shadow{
+    height:260px;
+    border-bottom:1px solid #333;
+}
+
+/* ==========================================================슬라이드바 시작 */
+.slide_ba{
+    margin:0 auto;
+    width:1920px;
+    height:620px;
+    /* border:1px solid red; */
+    /* background-color: #434748; */
+    overflow: hidden;
+
+}
+
+.slide_ba ul{
+    position: relative;
+    left:0; top:0;
+    width:100%;
+    height:100%;
+}
+
+.slide_ba ul li{
+    position: absolute;
+    width:100%;
+    height:100%;
+    left:100%;
+    top:0;
+   
+}
+
+.slide_ba ul li:nth-child(1){left:0;}
+
+/* ==========================================================슬라이드바 끝 */
+
+
+/* ==========================================================슬라이드바 바로 아래 tip바 시작 */
+.tip{
+    width:1920px;
+    height:80px;
+    margin:0 auto;
+    position: relative;
+    /* border: 1px solid red; */
+}
+.left_tip{
+    position: relative;
+    width:520px;
+    height:50px;
+    /* border:1px solid salmon; */
+    top:-70px;
+    left:23%;
+    
+}
+
+.left_tip span{
+    font-size: 20px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.left_tip p{
+    font-size: 18px;
+    color:#fff;
+    line-height: 50px;
+}
+
+.new{
+    position: absolute;
+    width:50px;
+    height:20px;
+    background-color: #333;
+    top:17px;   
+    right:15%;
+}
+.new p{
+    position: absolute;
+    top:-19px;
+    left:7px;
+}
+
+.new img{
+    position: absolute;
+    left:65px;
+    top:-10px;
+    cursor: pointer;
+}
+
+.right_tip{
+    position: relative;
+    width:550px;
+    height:50px;
+    /* border:1px solid salmon; */
+    top:-120px;
+    right:-52%;
+}
+
+.right_tip span{
+    font-size: 20px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.right_tip p{
+    font-size: 18px;
+    color:#333;
+    line-height: 50px;
+}
+
+.new2{
+    position: absolute;
+    width:50px;
+    height:20px;
+    background-color: #333;
+    top:17px;   
+    right:15%;
+}
+.new2 p{
+    position: absolute;
+    top:-19px;
+    left:7px;
+    color:#fff;
+}
+
+.new2 img{
+    position: absolute;
+    left:65px;
+    top:-5px;
+    cursor: pointer;
+}
+
+/* ==========================================================슬라이드바 바로 아래 tip바 끝 */
+
+/*이달의 신메뉴 시작*/
+
+#new_menu{
+    width:1920px;
+    height:1990px;
+    margin:0 auto;
+    /* border:2px solid red; */
+}
+
+.avocado{
+    margin:0 auto;
+}
+
+/*이달의 신메뉴*/
+.avo1{
+    position: relative;
+    width:1000px;
+    height:560px;
+    margin:50px auto;
+    border-bottom: 2px solid #eee;
+    border-left:none;
+    border-right:none;
+}
+.avo1 img{
+    position: absolute;
+}
+.avo1 h2 {
+    position: absolute;
+    top:31.8%;
+    left:11%;
+    font-size: 40px;
+    color:#666;
+}
+.avo1 > p{
+    position: absolute;
+    top:41.5%;
+    left:9%;
+    font-size: 18px;
+    color:#666;
+}
+.mini_avo{
+    position: relative;
+    width:135px;
+    height:40px;
+    top:50%;
+    left:15%;
+    background-color: #c0a88b;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 20px;
+    line-height: 22px;
+}
+.mini_avo > p{
+    color:#fff;
+    text-align: center;
+    padding-top:10px;
+    
+}
+.mini_avo:hover{
+    background-color:#545d58;
+    transform: scale(1.2);
+}
+/*이달의 신메뉴*/
+
+/* ==========================================================미니 슬라이드 시작 */
+.mini_slide{
+    position:relative;
+    width:490px;
+    height:320px;
+    /* border:1px solid red; */
+    /* background-color: #434748; */
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.mini_slide ul li{
+    position: absolute;
+    width:100%;
+    height:320px;
+    top:100%;
+   
+}
+
+.mini_slide ul li:nth-child(1){top:0%;}
+
+/* ==========================================================미니 슬라이드 끝 */
+
+/* 미니 슬라이드 옆 링크 끝 */
+.link_box{
+    position: relative;
+    margin:0 auto;
+    width:1000px;
+    height:380px;
+    /* border:1px solid red; */
+   /* background:red; */
+}
+.bb{
+    position: absolute;
+    width:495px;
+    height:320px;
+    right:0px;
+    top:0px;
+    /* border:1px solid red; */
+}
+
+/* 미니 슬라이드 옆 링크 끝 */
+
+/* 개설 안내 부분*/
+.avo2{
+    position: relative;
+    width:1000px;
+    height:560px;
+    margin:0 auto;
+    /* margin-top:-50px; */
+    /* border-bottom: 2px solid #eee; */
+    border-left:none;
+    border-right:none;
+}
+
+.avo2 img{
+    position: absolute;
+}
+.avo2 h2 {
+    position: absolute;
+    top:31.8%;
+    left:15.5%;
+    font-size: 40px;
+    color:#666;
+}
+.avo2 > p{
+    position: absolute;
+    top:41.5%;
+    left:9%;
+    font-size: 18px;
+    color:#666;
+}
+.mini_avo2{
+    position: relative;
+    width:135px;
+    height:40px;
+    top:50%;
+    left:16%;
+    background-color: #c0a88b;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 20px;
+    line-height: 22px;
+}
+.mini_avo2 > p{
+    color:#fff;
+    text-align: center;
+    padding-top:10px;
+    
+}
+.mini_avo2:hover{
+    background-color:#eaca03;
+    transform: scale(1.2);
+}
+
+/* 개설 안내 부분 끝*/
+.link_box2{
+    margin:0 auto;
+    width:1010px;
+    height:380px;
+    /* border:1px solid red; */
+    box-sizing: border-box;
+    border-bottom: 2px solid #eee;
+    
+}
+.link_box2 > div{
+    float:left;
+    margin-left:10px;
+    cursor: pointer;
+}
+.link_box2 > div:first-child{
+    margin-left:8px;
+}
+
+  /* ================================================== sns 갤러리 시작*/
+
+#gallery{
+width:1920px;
+height:800px;
+border-bottom: 2px solid #eee;
+border-left:none;
+border-right:none;
+margin:0 auto;
+padding-top:20px;
+}
+
+/*인스타그램 타이틀*/
+.sns_title{
+    width:400px;
+    height:100px;
+    margin:0 auto 30px;
+    font-size: 25px;
+    /* border:1px solid red; */
+}
+.sns_title li{
+    float:left;
+    margin-left:20px;
+}
+.sns_title li:nth-child(1){
+    width:60px;
+    height:60px;
+    margin-top:20px;
+}
+.sns_title li:nth-child(2){
+    width:300px;
+    height:100px;
+    margin-top:0px;
+}
+.sns_title li:nth-child(2) img{
+    width:100%;
+    height:100%;
+}
+/*인스타그램 타이틀*/
+
+.container {
+    position: relative;
+    width:1115px;
+    height:300px;
+    margin:0 auto;
+    /* border:1px solid red; */
+    /* perspective: 1000px; */
+    cursor: pointer;
+    }
+    
+.container > div{
+    position: relative;
+    float:left;
+    width:220px;
+    height:300px;
+    transform:none;
+    transition:all  0.5s;
+    margin-left:3px;
+    /* border:1px solid red; */   
+   
+}
+.face {
+    position: absolute;
+    top:0px;
+    left:0px;
+    transition:all 0.5s;
+}
+.container > div > div{
+    width:100%;
+    height:100%;
+}
+
+.container > div > div:nth-child(1){
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
+.container > div > div:nth-child(2){
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+
+.z {background: url(../img/sns1.jpg)no-repeat;}
+.y {background: url(../img/sns1-1.jpg)no-repeat;}
+    
+.front { background: url(../img/sns2.jpg)no-repeat;}
+.back {background: url(../img/sns2-1.jpg)no-repeat;}
+
+.aa {background: url(../img/sns3.jpg)no-repeat;}
+.bb-1 {background: url(../img/sns3-1.jpg)no-repeat;}
+
+.cc {background: url(../img/sns4.jpg)no-repeat;}
+.dd {background: url(../img/sns4-1.jpg)no-repeat;}
+
+.EE {background: url(../img/sns5.jpg)no-repeat;}
+.FF {background: url(../img/sns5-1.jpg)no-repeat;}
+
+
+
+.container>div:hover >div:nth-child(1){
+transform:rotateY(180deg);
+opacity: 0;
+}
+.container>div:hover >div:nth-child(2){
+transform:rotateY(0deg);
+opacity: 1;
+}
+
+
+  /* ========================================================= 2번 줄 시작*/
+.container2 {
+    position: relative;
+    width:1115px;
+    height:300px;
+    margin:0 auto;
+    /* border:1px solid red; */
+    /* perspective: 1000px; */
+    }
+    
+.container2 > div{
+    position: relative;
+    float:left;
+    width:220px;
+    height:300px;
+    transform:none;
+    transition:all  0.5s;
+    margin-left:3px;
+    /* border:1px solid red; */ 
+    cursor: pointer;  
+
+}
+    .sns {
+        position: absolute;
+        top:0px;
+        left:0px;
+        transition:all 0.5s;
+    }
+    .container2 > div > div{
+        width:100%;
+        height:100%;
+    }
+
+    .container2 > div > div:nth-child(1){
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+    
+    .container2 > div > div:nth-child(2){
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+  
+    .befor {background: url(../img/sns6.jpg)no-repeat;}
+    .after {background: url(../img/sns6-1.jpg)no-repeat;}
+
+    .befor1 {background: url(../img/sns7.jpg)no-repeat;}
+    .after1 {background: url(../img/sns7-1.jpg)no-repeat;}
+
+    .befor2 {background: url(../img/sns8.jpg)no-repeat;}
+    .after2 {background: url(../img/sns8-1.jpg)no-repeat;}
+
+    .befor3 {background: url(../img/sns9.jpg)no-repeat;}
+    .after3 {background: url(../img/sns9-1.jpg)no-repeat;}
+
+    .befor4 {background: url(../img/sns10.jpg)no-repeat;}
+    .after4 {background: url(../img/sns10-1.jpg)no-repeat}
+
+    
+    .container2>div:hover >div:nth-child(1){
+        transform:rotateY(180deg);
+        opacity: 0;
+    }
+    .container2>div:hover >div:nth-child(2){
+        transform:rotateY(0deg);
+        opacity: 1;
+    }
+        
+    
+/* ========================================================= 2번 줄 끝*/
+
+/* ========================================================= 푸터 시작*/
+footer{
+    width:1920px;
+    height:410px;
+    margin:0 auto;
+    /* border:1px solid red; */
+}
+
+.foot_title{
+    width:1920px;
+    margin:0 auto;
+    /* border:1px solid red; */
+}
+.foot_top{
+    width:1920px;
+    height:100px;
+    /* border:1px solid red; */
+}
+.foot_top img{
+    margin-top:12px;
+}
+
+.footer_bottom{
+    width:1900px;
+    padding:10px;
+    height:280px;
+    padding-top:20px;
+    background-color: #f3f3f3;
+    /* border:1px solid red; */
+}
+
+.fix{
+    width:890px;
+    margin:0 auto;
+    padding-top:10px;
+    cursor: pointer;
+}
+
+.fix>ul>li:nth-child(1){
+    margin-left:80px;
+}
+.img_c{
+    width:249px;
+    height:100px;
+    /* border:1px solid red; */
+    margin:0 auto;
+    padding:8px;
+}
+
+.img_c > img{
+    margin-top:30px;
+    cursor: pointer;
+}
+
+.footer_bottom ul{
+    text-align: center;
+}
+.footer_bottom ul li{
+    float:left;
+    display: block;
+    padding:5px;
+    margin-left:20px;
+    color:#a8a8a8;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.fix2{
+    width:100%;
+    /* height:100%; */
+    text-align: center;
+}
+
+
+.fix2 p{
+    display: block;
+    font-size: 15px;
+    clear:both;
+    color:#a8a8a8;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.fix2 p:last-child{
+    padding-top:30px;
+}
+/* ========================================================= 푸터 끝*/

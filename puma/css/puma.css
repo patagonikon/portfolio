@@ -1,0 +1,1570 @@
+*{margin:0; padding:0;}
+ul,li{list-style: none;}
+a{text-decoration: none; color:#333;}
+.cf:after{
+    clear:both;
+    content:'';
+    display: block;
+}
+
+.tap{
+    position: absolute;
+    width:200px;
+    height:333px;
+    right:5px;
+    top:600px;
+    /* border:1px solid red; */
+    position: fixed;
+    background: url(../img/tap.png);
+    z-index: 100;
+}
+.puma{
+    width:100%;
+    margin:0 auto;
+    height:30px;
+    background-color: #000;
+}
+
+.puma p{
+    position: relative;
+    text-align: center;
+    color:#fff;
+}
+
+
+
+.top_nav{
+    position: relative;
+    margin:0 auto;
+    height:50px;
+    background-color: #eaeaea;
+}
+
+
+.top_nav ul{
+    position: relative;
+    left:50%;
+    margin-left:200px;
+    top:15px;
+    width:450px;
+    height:30px;
+    /* border:1px solid */
+    
+}
+
+.top_nav ul li{
+    float:left;
+    margin-left:20px;
+    font-size: 15px;
+}
+
+
+.top2_nav{
+    position: relative;
+    margin:0 auto;
+    height:50px;
+    top:1px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px  rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+
+.puma_mini_logo{
+    position: absolute;
+    left:50%;
+    margin-left:-600px;
+    top:-23px;
+    z-index: 1;
+}
+
+.top2_nav>ul{
+	width:1000px;
+    margin:0 auto;
+	text-align:center;
+}
+
+.top2_nav>ul>li{
+    font-size: 15px;
+    float:left;
+    
+}
+
+.top2_nav>ul>li>a{
+    display:block;
+    width:100px;
+    margin-top:5px;
+	padding:10px 0 15px 3px;
+	font-weight:bold;
+	font-size:15px;
+}
+
+
+.top2_nav>ul>li>div{
+    position: absolute;
+    width:100%;
+    left:0;
+    /* display: none; */
+    
+}
+
+.top2_nav>ul>li:nth-child(1)>div{
+    display: block;
+}
+
+
+.puma_100{  
+    width:100%;
+    /* background-color: #333; */
+    background-color: #fbfbfb;
+    top:50px;
+    height:0;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+
+.top2_nav>ul>li:hover >div.puma_100{
+    height:400px;
+}
+
+
+.puma_center{
+    width:1300px;
+    margin:0 auto;
+    margin-top:11px;
+    padding-left:100px;
+    /* background-color: yellow; */
+}
+
+.puma_center>div{
+    float:right;
+    margin-top:40px;
+    margin-right:70px;
+}
+
+.puma_center>ul{
+    float:left;
+    margin-top:20px;
+    padding-left:30px;
+   
+
+}
+.puma_center>ul:nth-child(1){
+    margin-left:100px;
+}
+
+.puma_center>ul>li>a{
+    display: block;
+    width:130px;
+    height:30px;
+    font-size: 14px;
+    text-align: left;
+}
+.puma_center>ul>li:nth-child(1)>a{
+    font-size: 15px;
+    width:130px;
+    box-sizing: border-box;
+    font-weight: bold;
+    border-bottom: 1px solid #333;
+    padding-left:80px;
+    line-height: 70px;
+    color:red;
+    height:70px;
+  
+}
+
+.puma_center1>dl{
+    float:left;
+    width:400px;
+    /* border:1px solid red; */
+}
+.puma_center1>dl>dd{
+    float:left;
+    margin-top:30px;
+    width:120px;
+    height:150px;
+    /* border:1px solid red; */
+}
+
+
+
+/* --------------------------------------------------------------- 1페이지동그란 아이콘------ */
+
+.puma_center>ul>li:nth-child(1).menu1>a{
+    background:url(../img/원형빨간운동화.png) no-repeat 10% 50%;
+}
+.puma_center>ul>li:nth-child(1).menu2>a{
+    background:url(../img/원형푸마티.png) no-repeat 10% 50%;
+}
+.puma_center>ul>li:nth-child(1).menu3>a{
+    background:url(../img/푸마책가방.png) no-repeat 10% 50%;
+}
+.puma_center>ul>li:nth-child(1).menu4>a{
+    background:url(../img/원형축구공.png) no-repeat 10% 50%;
+}
+.puma_center>ul>li:nth-child(1).menu5>a{
+    background:url(../img/원형푸마.png) no-repeat 10% 50%;
+}
+
+/* ----------------------------------------------------------------1페이지동그란 아이콘------ */
+
+/* --------------------------------------------------------------- 2페이지동그란 아이콘------ */
+
+.puma_center>ul>li:nth-child(1).menu6>a{
+    background:url(../img/원형빨간운동화.png) no-repeat 10% 50%;
+}
+.puma_center>ul>li:nth-child(1).menu7>a{
+    background:url(../img/원형브라탑.png) no-repeat 10% 50%;
+}
+.puma_center>ul>li:nth-child(1).menu8>a{
+    background:url(../img/원형빨간백.png) no-repeat 10% 50%;
+}
+.puma_center>ul>li:nth-child(1).menu9>a{
+    background:url(../img/원형축구공.png) no-repeat 10% 50%;
+}
+.puma_center>ul>li:nth-child(1).menu10>a{
+    background:url(../img/원형푸마.png) no-repeat 10% 50%;
+}
+
+/* ----------------------------------------------------------------2페이지동그란 아이콘------ */
+
+/* --------------------------------------------------------------- 2페이지동그란 아이콘------ */
+
+.puma_center>ul>li:nth-child(1).menu11>a{
+    background:url(../img/원형오리.png) no-repeat 10% 50%;
+}
+.puma_center>ul>li:nth-child(1).menu12>a{
+    background:url(../img/원형세발자전거.png) no-repeat 10% 50%;
+}
+.puma_center>ul>li:nth-child(1).menu13>a{
+    background:url(../img/원형인라인스케이트.png) no-repeat 10% 50%;
+}
+.puma_center>ul>li:nth-child(1).menu14>a{
+    background:url(../img/원형푸마.png) no-repeat 10% 50%;
+}
+/* ----------------------------------------------------------------2페이지동그란 아이콘------ */
+
+/* =================================================================================슬라이드 시작 */
+
+
+
+
+
+
+.slider{
+    margin:0 auto;
+    width:1440px;
+    height:450px;
+    padding-top:153px;
+    overflow: hidden;
+    /* border:1px solid red; */
+    
+}
+
+.slider ul{
+    position: relative;
+    left:0; top:0px;
+    width:100%;
+    height:100%;
+}
+
+.slider ul li{
+    position: absolute;
+    width:100%;
+    height:100%;
+    left:100%;
+    top:-150px;
+}
+
+.slider ul li:nth-child(1){left:0;}
+
+/* =================================================================================슬라이드 끝 */
+
+
+/* ----------------------------------------------------------------선미사진과 동그라미------ */
+.puma_main{
+    position: relative;
+    margin:0 auto;
+    width:1440px;
+    height:500px;
+    /* border:1px solid red; */
+}
+
+.puma_one{
+    position: absolute;
+    left:50%;
+    left:900px;
+    top:650px;
+    width:15px;
+    height:15px;
+    border-radius: 15px;
+    background-color: #ddd;
+}
+.puma_one2{
+    position: absolute;
+    left:50%;
+    top:650px;
+    margin-left:-25px;
+    width:15px;
+    height:15px;
+    border-radius: 15px;
+    background-color: #aaa;
+}
+.puma_one3{
+    position: absolute;
+    left:50%;
+    top:650px;
+    margin-left:3px;
+    width:15px;
+    height:15px;
+    border-radius: 15px;
+    background-color: #ddd;
+}
+.puma_one4{
+    position: absolute;
+    left:50%;
+    top:650px;
+    margin-left:30px;
+    width:15px;
+    height:15px;
+    border-radius: 15px;
+    background-color: #ddd;
+}
+
+/* ----------------------------------------------------------------선미사진과 동그라미------ */
+
+/* ----------------------------------------------------------------TRENDING과 사진3개 스케일 */
+.TRENDING{
+    position: relative;
+    margin:0 auto;
+    width:300px;
+    height:50px;
+    top:80px;
+    /* border:1px solid blue; */
+}
+
+.TRENDING p{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+.puma_three{
+    position: relative;
+    margin:0 auto;
+    width:1440px;
+    height:310px;
+    /* border:1px solid red; */
+    top:100px;
+    transition:2s;
+  
+}
+
+.puma_three>div{
+    float:left;
+    overflow: hidden;
+    cursor: pointer;
+  
+}
+
+.puma_three>div img{
+   width:100%;
+   height:100%;
+    transition:all 0.3s;
+}
+
+
+.puma_three>div:hover img{
+    transform:scale(1.1);
+}
+
+.puma_font{
+    position: relative;
+    margin:0 auto;
+    width:1440px;
+    height:300px;
+    top:120px;
+    /* border:1px solid red; */
+}
+
+.puma_font p{
+    cursor: pointer;
+}
+
+
+.puma_font1{
+    position: absolute;
+    width:200px;
+    height:100px;
+    left:150px;
+    text-align: center;
+    /* border:1px solid green; */
+    
+}
+
+
+.puma_font1 p:nth-child(1){
+    font-size: 25px;
+    color:#333;
+    font-weight: bold;
+}
+
+.puma_font1 p:nth-child(2){
+    font-size: 12px;
+    color:#333;
+    margin-top:20px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+.puma_font2{
+    position: absolute;
+    width:200px;
+    height:100px;
+    left:620px;
+    text-align: center;
+    /* border:1px solid green; */
+}
+
+.puma_font2 p:nth-child(1){
+    font-size: 25px;
+    color:#333;
+    font-weight: bold;
+}
+
+.puma_font2 p:nth-child(2){
+    font-size: 12px;
+    color:#333;
+    margin-top:20px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+
+.puma_font3{
+    position: absolute;
+    width:200px;
+    height:100px;
+    right:120px;
+    text-align: center;
+    /* border:1px solid green; */
+}
+
+.puma_font3 p:nth-child(1){
+    font-size: 25px;
+    color:#333;
+    font-weight: bold;
+}
+
+.puma_font3 p:nth-child(2){
+    font-size: 12px;
+    color:#333;
+    margin-top:20px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+/* ----------------------------------------------------------------TRENDING과 사진3개 스케일 */
+
+
+/* ----------------------------------------------------------------SHOP PUMA 선미와 동그라미3개 */
+.SHOPPUMA{
+    position: relative;
+    margin:0 auto;
+    width:300px;
+    height:50px;
+    top:-10px;
+    left:50px;
+    /* border:1px solid blue; */
+}
+
+.SHOPPUMA p{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+.puma_content{
+    position: relative;
+    margin:0 auto;
+    width:1440px;
+    height:300px;
+    /* border:1px solid red; */
+}
+
+.content-1{
+    position: absolute;
+    left:200px;
+    top:20px;
+}
+
+.content-1 P{
+    position: absolute;
+    font-size: 35px;
+    font-weight: bold;
+    top:108px;
+    left:70px;
+    color:#fff;
+}
+
+
+.content-2{
+    position: absolute;
+    left:600px;
+    top:20px;
+}
+
+.content-2 P{
+    position: absolute;
+    font-size: 35px;
+    font-weight: bold;
+    top:108px;
+    left:35px;
+    color:#fff;
+}
+
+
+.content-3{
+    position: absolute;
+    right:200px;
+    top:20px;
+}
+
+.content-3 P{
+    position: absolute;
+    font-size: 35px;
+    font-weight: bold;
+    top:108px;
+    left:25px;
+    color:#fff;
+}
+
+/* ----------------------------------------------------------------SHOP PUMA 선미와 동그라미3개 */
+
+
+
+/* ----------------------------------------------------------------신발 옷 이름 이미지 */
+
+.PUMASPORTSTYLE{
+    position: relative;
+    margin:0 auto;
+    width:375px;
+    height:50px;
+    top:100px;
+    left:15px;
+    text-align: center;
+    /* border:1px solid blue; */
+}
+
+.PUMASPORTSTYLE p{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.puma_sunmi{
+    position: relative;
+    margin:0 auto;
+    width:1180px;
+    height:900px;
+    top:130px;
+    border:1px solid #ccc;
+
+}
+
+
+.mini_puma{
+    position: absolute;
+    width:50px;
+    height:60px;
+    left:180px;
+    top:560px;
+    /* border:1px solid blue; */
+    background: url(../img/신발주머니2.png);
+}
+
+
+.mini_puma:hover{
+    background: url(../img/신발주머니.png);
+}
+
+.mini_puma2{
+    position: absolute;
+    width:50px;
+    height:60px;
+    left:410px;
+    top:560px;
+    /* border:1px solid red; */
+    background: url(../img/신발주머니2.png);
+}
+
+.mini_puma2:hover{
+    background: url(../img/신발주머니.png);
+}
+
+.mini_puma3{
+    position: absolute;
+    width:50px;
+    height:60px;
+    left:640px;
+    top:560px;
+    /* border:1px solid green; */
+    background: url(../img/신발주머니2.png);
+}
+
+.mini_puma3:hover{
+    background: url(../img/신발주머니.png);
+}
+
+
+.mini_puma4{
+    position: absolute;
+    width:50px;
+    height:60px;
+    left:860px;
+    top:560px;
+    /* border:1px solid pink; */
+    background: url(../img/신발주머니2.png);
+}
+
+.mini_puma4:hover{
+    background: url(../img/신발주머니.png);
+}
+
+.mini_puma5{
+    position: absolute;
+    width:50px;
+    height:60px;
+    left:1080px;
+    top:560px;
+    /* border:1px solid pink; */
+    background: url(../img/신발주머니2.png);
+}
+
+.mini_puma5:hover{
+    background: url(../img/신발주머니.png);
+}
+
+
+
+
+
+.mini_pumatem1{
+    position: absolute;
+    width:200px;
+    height:150px;
+    left:30px;
+    top:625px;
+    /* border:1px solid pink; */
+    background: url(../img/하얀샌들.jpg);
+}
+
+.mini_pumatem1:hover{
+    background: url(../img/하얀샌들2.jpg);
+}
+
+.mini_pumatem2{
+    position: absolute;
+    width:200px;
+    height:150px;
+    left:260px;
+    top:625px;
+    /* border:1px solid pink; */
+    background: url(../img/검정샌들1.jpg);
+}
+
+.mini_pumatem2:hover{
+    background: url(../img/검정샌들2.jpg);
+}
+
+.mini_pumatem3{
+    position: absolute;
+    width:200px;
+    height:150px;
+    left:490px;
+    top:625px;
+    /* border:1px solid pink; */
+    background: url(../img/베이지샌들1.jpg);
+}
+
+.mini_pumatem3:hover{
+    background: url(../img/베이지샌들2.jpg);
+}
+
+.mini_pumatem4{
+    position: absolute;
+    width:200px;
+    height:210px;
+    left:710px;
+    top:625px;
+    /* border:1px solid pink; */
+    background: url(../img/반팔1.jpg);
+}
+
+.mini_pumatem4:hover{
+    background: url(../img/반팔2.jpg);
+}
+
+.mini_pumatem5{
+    position: absolute;
+    width:200px;
+    height:210px;
+    left:930px;
+    top:625px;
+    /* border:1px solid pink; */
+    background: url(../img/핑크반팔1.jpg);
+}
+
+.mini_pumatem5:hover{
+    background: url(../img/핑크반팔2.jpg);
+}
+
+/* ----------------------------------------------------------------신발 옷 이름 이미지 */
+
+
+
+
+/* ----------------------------------------------------------------신발 옷 이름 및 가격표시 */
+
+.puma_item{
+    position: absolute;
+    top:835px;
+    width:200px;
+    height:60px;
+    /* border:1px solid red; */
+    text-align: center;
+    left:30px;
+}
+
+.puma_item p{
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.puma_item p:nth-child(2){
+    color:red;
+    font-size: 17px;
+    padding-top:15px;
+}
+
+.puma_item2{
+    position: absolute;
+    top:835px;
+    width:200px;
+    height:60px;
+    /* border:1px solid red; */
+    text-align: center;
+    left:260px;
+}
+
+.puma_item2 p{
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.puma_item2 p:nth-child(2){
+    color:red;
+    font-size: 17px;
+    padding-top:15px;
+}
+
+.puma_item3{
+    position: absolute;
+    top:835px;
+    width:200px;
+    height:60px;
+    /* border:1px solid red; */
+    text-align: center;
+    left:490px;
+}
+
+.puma_item3 p{
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.puma_item3 p:nth-child(2){
+    color:red;
+    font-size: 17px;
+    padding-top:15px;
+}
+
+.puma_item4{
+    position: absolute;
+    top:835px;
+    width:200px;
+    height:60px;
+    /* border:1px solid red; */
+    text-align: center;
+    right:265px;
+}
+
+.puma_item4 p{
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.puma_item4 p:nth-child(2){
+    color:red;
+    font-size: 17px;
+    padding-top:15px;
+}
+
+.puma_item5{
+    position: absolute;
+    top:835px;
+    width:200px;
+    height:60px;
+    /* border:1px solid red; */
+    text-align: center;
+    right:45px;
+}
+
+.puma_item5 p{
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.puma_item5 p:nth-child(2){
+    color:red;
+    font-size: 17px;
+    padding-top:15px;
+}
+
+
+/* ----------------------------------------------------------------신발 옷 이름 및 가격표시 */
+
+
+/* ---------------------------------------------------------------1번 흑인농구화보*/
+
+
+.PUMASPORTS{
+    position: relative;
+    margin:0 auto;
+    width:375px;
+    height:50px;
+    top:200px;
+    left:15px;
+    text-align: center;
+    /* border:1px solid blue; */
+}
+
+.PUMASPORTS p{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.black{
+    position: relative;
+    margin:0 auto;
+    width:1180px;
+    height:900px;
+    top:210px;
+    /* border:1px solid red; */
+
+}
+
+.black_00{
+    position: absolute;
+    width:648px;
+    height:900px;
+    /* border:1px solid red; */
+    background: url(../img/흑인농구선수.jpg) no-repeat 0 0;
+}
+
+/* ---------------------------------------------------------------1번 흑인농구화보 신발과 가격표 */
+.black_1{
+    position: absolute;
+    width:200px;
+    height:100px;
+    right:270px;
+    top:40px;
+    /* border:1px solid red; */
+    background: url(../img/흰고무운동화1.JPG)no-repeat 0 0;
+
+}
+
+.black_1:hover{
+    background: url(../img/흰고무운동화2.JPG)no-repeat 0 0;
+}
+
+
+.black_p1{
+    position: absolute;
+    top:40px;
+    width:200px;
+    height:60px;
+    /* border:1px solid red; */
+    text-align: center;
+    right:35px;
+}
+
+.black_p1 p{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.black_p1 p:nth-child(2){
+    color:red;
+    font-size: 17px;
+    padding-top:15px;
+}
+
+
+.black_mini_1{
+    position: absolute;
+    width:50px;
+    height:60px;
+    right:35px;
+    top:65px;
+    /* border:1px solid pink; */
+    background: url(../img/신발주머니2.png);
+}
+
+
+.black_mini_1:hover{
+    background: url(../img/신발주머니.png);
+}
+
+
+/* ---------------------------------------------------------------1번 흑인농구화보 신발과 가격표 */
+
+
+
+/* ---------------------------------------------------------------2번 흑인농구화보 신발과 가격표 */
+
+
+.black_2{
+    position: absolute;
+    width:200px;
+    height:100px;
+    right:30px;
+    top:260px;
+    /* border:1px solid red; */
+    background: url(../img/초록고무운동화1.JPG)no-repeat 0 0;
+
+}
+
+.black_2:hover{
+    background: url(../img/초록고무운동화2.JPG)no-repeat 0 0;
+}
+
+
+.black_p2{
+    position: absolute;
+    top:260px;
+    width:200px;
+    height:60px;
+    /* border:1px solid red; */
+    text-align: center;
+    right:270px;
+}
+
+.black_p2 p{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.black_p2 p:nth-child(2){
+    color:red;
+    font-size: 17px;
+    padding-top:15px;
+}
+
+
+.black_mini_2{
+    position: absolute;
+    width:50px;
+    height:60px;
+    right:270px;
+    top:290px;
+    /* border:1px solid pink; */
+    background: url(../img/신발주머니2.png);
+}
+
+
+.black_mini_2:hover{
+    background: url(../img/신발주머니.png);
+}
+
+
+
+/* ---------------------------------------------------------------2번 흑인농구화보 신발과 가격표 */
+
+
+
+/* ---------------------------------------------------------------3번 흑인농구화보 신발과 가격표 */
+
+
+
+
+.black_3{
+    position: absolute;
+    width:200px;
+    height:100px;
+    right:270px;
+    top:460px;
+    /* border:1px solid red; */
+    background: url(../img/올백고무운동화1.JPG)no-repeat 0 0;
+
+}
+
+.black_3:hover{
+    background: url(../img/올백고무운동화1_1.JPG)no-repeat 0 0;
+}
+
+
+.black_p3{
+    position: absolute;
+    top:460px;
+    width:200px;
+    height:60px;
+    /* border:1px solid red; */
+    text-align: center;
+    right:35px;
+}
+
+.black_p3 p{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.black_p3 p:nth-child(2){
+    color:red;
+    font-size: 17px;
+    padding-top:15px;
+}
+
+
+.black_mini_3{
+    position: absolute;
+    width:50px;
+    height:60px;
+    right:35px;
+    top:480px;
+    /* border:1px solid pink; */
+    background: url(../img/신발주머니2.png);
+}
+
+
+.black_mini_3:hover{
+    background: url(../img/신발주머니.png);
+}
+
+
+/* ---------------------------------------------------------------3번 흑인농구화보 신발과 가격표 */
+
+
+/* ---------------------------------------------------------------4번 흑인농구화보 신발과 가격표 */
+
+
+
+.black_4{
+    position: absolute;
+    width:200px;
+    height:100px;
+    right:30px;
+    top:670px;
+    /* border:1px solid red; */
+    background: url(../img/올검고무운둥화1.JPG)no-repeat 0 0;
+
+}
+
+.black_4:hover{
+    background: url(../img/올검고무운둥화2.JPG)no-repeat 0 0;
+}
+
+
+.black_p4{
+    position: absolute;
+    top:670px;
+    width:200px;
+    height:60px;
+    /* border:1px solid red; */
+    text-align: center;
+    right:270px;
+}
+
+.black_p4 p{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.black_p4 p:nth-child(2){
+    color:red;
+    font-size: 17px;
+    padding-top:15px;
+}
+
+
+.black_mini_4{
+    position: absolute;
+    width:50px;
+    height:60px;
+    right:270px;
+    top:700px;
+    /* border:1px solid pink; */
+    background: url(../img/신발주머니2.png);
+}
+
+
+.black_mini_4:hover{
+    background: url(../img/신발주머니.png);
+}
+
+
+/* ---------------------------------------------------------------4번 흑인농구화보 신발과 가격표 */
+
+
+/* ---------------------------------------------------------------------------푸마 스토리 */
+
+
+
+.PUMASTORY{
+    position: relative;
+    margin:0 auto;
+    width:375px;
+    height:50px;
+    top:200px;
+    left:15px;
+    text-align: center;
+    /* border:1px solid blue; */
+}
+
+.PUMASTORY p{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+
+
+
+.puma_video{
+    position: relative;
+    margin:0 auto;
+    width:1180px;
+    height:300px;
+    top:250px;
+    border:1px solid #ccc;
+    background: url(../img/푸마협찬.jpg);
+}
+
+.puma_video:after{
+    content:'PUMA x GEN.G';
+    width:1180px;
+    height:0px;
+    background-color: red;
+    position: absolute;
+    bottom:0;
+    overflow: hidden;
+    line-height: 25px;
+    color:#fff;
+    font-size: 13px;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+
+.puma_video:hover:after{
+    height:25px;
+    opacity: 1;
+}
+
+
+/* ----------------------------------------------------------------------------푸마 스토리 */
+
+
+
+/* ---------------------------------------------------------------------푸마 이메일과 매장찾기 */
+
+
+.puma_sub{
+    position: relative;
+    margin:0 auto;
+    top:400px;
+    width:1180px;
+    height:200px;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+
+.sub_1{
+    position: absolute;
+    width:110px;
+    height:130px;
+    top:50px;
+    left:170px;
+    /* border:1px solid pink; */
+    background: url(../img/푸마편지.jpg)no-repeat 0 0;
+}
+
+.sub_1_p{
+    position: absolute;
+    left:300px;
+    top:80px;
+    font-size: 13px;
+}
+
+.sub_1_1{
+    position: absolute;
+    width:200px;
+    height:30px;
+    left:300px;
+    top:100px;
+    line-height: 30px;
+    background-color: #ddd;
+}
+
+.sub_1_1 p{
+    position: absolute;
+    font-size: 12px;
+    left:10px;
+}
+
+.sub_1_box{
+    position: absolute;
+    width:30px;
+    height:30px;
+    top:100px;
+    left:503px;
+    background-color: red;
+}
+
+
+.sub_1_box1{
+    position: absolute;
+    width:30px;
+    height:30px;
+    /* border:1px solid red; */
+    top:9px;
+    left:12px;
+    background: url(../img/하얀화살표.png)no-repeat 0 0;
+}
+
+
+
+
+
+.red_ba{
+    position: absolute;
+    top:65px;
+    left:585px;
+    width:1px;
+    height:100px;
+    background-color: red;
+}
+
+
+
+
+
+.sub_2{
+    position: absolute;
+    width:180px;
+    height:130px;
+    top:45px;
+    right:100px;
+    /* border:1px solid pink; */
+    background: url(../img/푸마매장.jpg)no-repeat 0 0;
+}
+
+.sub_2_p{
+    position: absolute;
+    right:413px;
+    top:80px;
+    font-size: 13px;
+}
+
+.sub_2_2{
+    position: absolute;
+    width:200px;
+    height:30px;
+    right:340px;
+    top:100px;
+    line-height: 30px;
+    background-color: #ddd;
+}
+
+.sub_2_2 p{
+    position: absolute;
+    font-size: 12px;
+    left:10px;
+}
+
+.sub_2_box{
+    position: absolute;
+    width:30px;
+    height:30px;
+    top:100px;
+    right:307px;
+    background-color: red;
+}
+
+.sub_2_box1{
+    position: absolute;
+    width:30px;
+    height:30px;
+    /* border:1px solid red; */
+    top:9px;
+    left:12px;
+    background: url(../img/하얀화살표.png)no-repeat 0 0;
+}
+
+.red_ba2{
+    position: absolute;
+    top:65px;
+    left:610px;
+    width:1px;
+    height:100px;
+    background-color: red;
+}
+
+
+/* ---------------------------------------------------------------------푸마 이메일과 매장찾기 */
+
+.footer1{
+    position: relative;
+    margin:0 auto;
+    width:1180px;
+    height:500px;
+    /* border:1px solid red; */
+    top:500px;
+}
+
+.bigpuma{
+    position: absolute;
+    width:220px;
+    height:100px;
+    /* border:1px solid pink; */
+    top:30px;
+    background: url(../img/푸마큰로고.png)no-repeat 0 0;
+}
+
+.bigpuma_p{
+    position: absolute;
+    width:220px;
+    height:30px;
+    /* border:1px solid pink; */
+    top:140px;
+}
+
+.bigpuma_p p{
+    color:#aaa;
+    font-size: 13px;
+}
+
+.bigpuma_p1{
+    position: absolute;
+    width:150px;
+    height:30px;
+    /* border:1px solid red; */
+    left:280px;
+    top:70px;
+}
+.bigpuma_p1 P{
+    font-size: 16px;
+    text-align: center;
+}
+.bigpuma_mini{
+    position: absolute;
+    width:150px;
+    height:120px;
+    /* border:1px solid red; */
+    left:280px;
+    top:100px;
+}
+
+.bigpuma_mini>li{
+    padding:8px 0 0 30px;
+    font-size: 12px;
+}
+.bigpuma_mini>li>a:hover{
+    text-decoration: underline #333;
+}
+
+
+/* -------------------------------------------------- */
+
+
+
+.bigpuma_p2{
+    position: absolute;
+    width:150px;
+    height:30px;
+    /* border:1px solid red; */
+    left:500px;
+    top:70px;
+}
+.bigpuma_p2 P{
+    font-size: 16px;
+    text-align: center;
+}
+.bigpuma_mini1{
+    position: absolute;
+    width:150px;
+    height:120px;
+    /* border:1px solid red; */
+    left:500px;
+    top:100px;
+}
+
+.bigpuma_mini1>li{
+    padding:8px 0 0 30px;
+    font-size: 12px;
+}
+.bigpuma_mini1>li>a:hover{
+    text-decoration: underline #333;
+}
+
+
+/* -------------------------------------------------- */
+
+
+.bigpuma_p3{
+    position: absolute;
+    width:150px;
+    height:30px;
+    /* border:1px solid red; */
+    right:300px;
+    top:70px;
+}
+.bigpuma_p3 P{
+    font-size: 16px;
+    text-align: center;
+}
+.bigpuma_mini2{
+    position: absolute;
+    width:150px;
+    height:120px;
+    /* border:1px solid red; */
+    right:300px;
+    top:100px;
+}
+
+.bigpuma_mini2>li{
+    padding:8px 0 0 30px;
+    font-size: 12px;
+}
+.bigpuma_mini2>li>a:hover{
+    text-decoration: underline #333;
+}
+
+/* -------------------------------------------------- */
+
+
+.bigpuma_p4{
+    position: absolute;
+    width:150px;
+    height:30px;
+    /* border:1px solid red; */
+    right:80px;
+    top:70px;
+}
+.bigpuma_p4 P{
+    font-size: 16px;
+    text-align: center;
+}
+.bigpuma_mini3{
+    position: absolute;
+    width:150px;
+    height:220px;
+    /* border:1px solid red; */
+    right:80px;
+    top:100px;
+}
+
+.bigpuma_mini3>li{
+    padding:8px 0 0 30px;
+    font-size: 12px;
+}
+.bigpuma_mini3>li>a:hover{
+    text-decoration: underline #333;
+}
+
+/* -------------------------------------------------- */
+
+
+
+.footer2{
+    position: relative;
+    margin:0 auto;
+    width:100%;
+    height:220px;
+    bottom:-380px;
+    background-color: #ddd;
+}
+
+.font{
+    position: relative;
+    margin:0 auto;
+    width:1200px;
+    height:200px;
+    /* border:1px solid pink; */
+}
+
+
+.footer2 p{
+    top:50px;
+    font-size: 12px;
+}
+
+
+.footer2 p:nth-child(1){
+  padding-top:40px;
+   
+}
+
+
+.footer2 p:nth-child(2){
+    position: absolute;
+    left:130px;
+    top:39px;
+}
+.footer2 p:nth-child(3){
+    position: absolute;
+    left:455px;
+    top:39px;
+}
+.footer2 p:nth-child(4){
+    position: absolute;
+    left:148px;
+    top:60px;
+}
+.footer2 p:nth-child(5){
+    position: absolute;
+    left:0px;
+    top:60px;
+}
+.footer2 p:nth-child(6){
+    position: absolute;
+    left:338px;
+    top:60px;
+}
+.footer2 p:nth-child(7){
+    position: absolute;
+    left:218px;
+    top:80px;
+}
+.footer2 p:nth-child(8){
+    position: absolute;
+    left:0px;
+    top:80px;
+}
+.footer2 p:nth-child(9){
+    position: absolute;
+    left:0px;
+    top:100px;
+}
+.font2{
+    position: absolute;
+    width:270px;
+    height:130px;
+    /* border:1px solid green; */
+    top:30px;
+    right:5%;
+    background: url(../img/z12.jpg)no-repeat;
+}

@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>JUICY-쥬씨</title>
+    <link rel="stylesheet" type="text/css" href="css/see.css"/>
+    <script src="js/jquery-1.12.3.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+
+    <script>
+        $(function(){
+            var i = 0;
+
+            setInterval(function(){
+                i++; //i = 1+1
+                if(i==3){i=0;}
+                $('.slide_ba ul li').eq(i-1).css('left','0').animate({"left":'-100%'},700);
+                $('.slide_ba ul li').eq(i).css('left','100%').animate({"left":'0%'},700);
+            },3000);
+        });
+
+    </script>
+</head>
+<body>
+
+    <header>
+        <div id="big_nav cf">
+            <nav class="mine_nav cf">
+                <div class="jusic_logo"><a href="#"></a></div>
+                <ul>
+                    <li><a href="#">회사소개</a>
+                        <ul>
+                            <li><a href="#">브랜드소개</li></a>
+                            <li><a href="#">CEO인사말</li></a>
+                            <li><a href="#">연혁</li></a>
+                            <li><a href="#">경영목표</li></a>
+                            <li><a href="#">오시는길</li></a>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">쥬씨만의 강점</a>
+                        <ul>
+                            <li><a href="#">쥬씨 쥬스의장점</li></a>
+                            <li><a href="#">주씨 커피의 장점</li></a>
+                            <li><a href="#">국토정보기본API</li></a>
+                            <li><a href="#">쥬씨에게 묻는다</li></a>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">메뉴소개</a>
+                        <ul>
+                            <li><a href="#">BEST MENU</li></a>
+                            <li><a href="#">JUSIC SPECIAL</li></a>
+                            <li><a href="#">FRESH JUSIC</li></a>
+                            <li><a href="#">COFFEE</li></a>
+                            <li><a href="#">ONLY HOT</li></a>
+                            <li><a href="#">BEVERAGE</li></a>
+                            <li><a href="#">DESSERT</li></a>
+                        </ul>
+                    </li>
+                    <li><a href="#">가맹안내</a>
+                        <ul>
+                            <li><a href="#">개설조건 및 절차</li></a>
+                            <li><a href="#">인테리어</li></a>
+                            <li><a href="#">창업FAQ</li></a>
+                            <li><a href="#">창업지원안내</li></a>
+                        </ul>
+                    </li>
+                    <li><a href="#">쥬씨소식</a>
+                        <ul>
+                            <li><a href="#">NEWS</li></a>
+                            <li><a href="#">EVENT</li></a>
+                            <li><a href="#">우수매장</li></a>
+                            <li><a href="#">쥬씨나눔트럭</li></a>
+                        </ul>
+                    </li>
+                    <li><a href="#">창업문의</a>
+                        <ul>
+                            <li><a href="#">창업문의</li></a>
+                            <li><a href="#">서업설명회</li></a>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="shadow"></div>
+            </nav>
+        </nav>
+    </header>
+    <section>
+        <div class="slide_ba cf">
+            <ul>
+                <li><img src="img/slide1.jpg"></li>
+                <li><img src="img/slide2.jpg"></li>
+                <li><img src="img/slide3.jpg"></li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="center_bg cf">
+            <div class="background">
+                <div class="point cf"></div>
+                <div class="toy"><a href ="#">
+                    <div class="no1">
+                        <p>창업문의</p>
+                    </div>
+                    <div class="no2">
+                        <p>사업설명회 신청</p>
+                    </div>
+                    <div class="no3">
+                        <p>가맹상담신청</p>
+                    </div>
+                    <div class="no4">
+                        <p>쥬씨 매장평가</p>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="pp"><a href="#">
+            <div class="tt">
+                <div class="apple"></div>
+                <div class="strawberry"> </div>
+            </div>
+            </a>
+      
+        </div>
+    </section>
+    <section>
+        <div class="media">
+            <div class="yellow">
+                <div class="ppt">        
+                </div>
+                <div class="ppt2">
+                    <div class="p1">
+                        <p>신선함을 추구하는 쥬씨이야기</p>
+                    </div>
+                    <div class="p2">
+                        <p>쥬씨는 고객님들과 만나면서, 점점 다양해지고
+                            고급스러워지는 고객님들의 입맛에 맞는 메뉴를
+                            합리적인 가격에 대접하기 위해 오늘도 끊임없이
+                            메뉴를 개발하고 있습니다.</p>
+                    </div>
+                </div>
+                <div class="movie">
+                    <div class="left_orange_ball"></div>
+                    <div class="right_red_ball"></div>
+                    <video  width='700' controls >
+                        <source src='midia/joo.mp4' type="video/mp4" >
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <article>
+        <div id="page_cut">
+            <div class="big_pop">
+                <div class="pop1">
+                    <p><a href="#">'쥬씨' 여름 신메뉴 수박 시리즈 출시</a></p>
+                    <p><a href="#">매년 여름 판매 기록을 경신하고 있는 쥬씨의 수박 시리즈 올해는이국적인 매력적인 코코넛으로 부드럽고 달콤한 맛을 더해..
+                        [컨슈머타임스 김동역 기자]떄.. 이른 무더위가 기승을 부리는..</a>
+                    </p>
+                </div>
+                <div class="pop2">
+                    <p><a href="#">오렌지. 생강.말차 등 건강한 재료 활용한 신메뉴 '오렌자이저'..</a</p>
+                    <p><a href="#">생과일주스 대표  브랜드 쥬씨가 오는 13일부터 면연력 강화를 주제로 한 신메뉴 '오렌자이저' 시리즈 5종을 9일에 밝힌다고 발표하였다.</a>
+                    </p>
+                </div>
+                <div class="pop3">
+                    <p><a href="#">쥬씨 겨울철 빅히트 메뉴 '2020 생딸기 1번지 쥬스' 출시</a></p>
+                    <p><a href="#">생과일 주스 브랜드 쥬씨가  겨울 가맹점 매출 상승의 견인차 역할을 하는 2020년 생딸기 주스 9종을 출시 한다고 17일날 밝혔다. 이번 생딸기.. 메뉴 컨셉트로는..</a>
+                    </p>
+                </div>
+                <div class="pop4">
+                    <p><a href="#">#53 쥬씨 나눔트럭 '수원대학교'</a></p>
+                    <p><a href="#">쥬싸가 간다! 나눔트럭 수원대학교이 쉰세번쨰로 찾아간 곳은 젊은이들이 가득한 곳...! 수원대학교입니다. 4월 벚꽃이 만개한..</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div id="footer">
+            <div class= last_foot>
+                 <div class="top_foot">
+                   <ul class="foot_1">
+                       <li class="tim">개인정보처리방침</li>
+                       <li>주씨 가맹주 커뮤니티</li>
+                       <li>FOLLOW ME</li>
+                   </ul>
+                   <div class="facebook"></div>
+                   <div class="instar"></div>
+                 </div>
+                 <div class="left_juce"></div>
+                 <div class="bottom_foot">
+                     <p>THE ORIGINAL NO1.JUICY!</p>
+                     <p>상호: 쥬씨주식회사 대표:윤석제<br/>주소: 서울특별시 성동구 왕십리로 16가길 24 4층 (서울특별시 성동구 성수동 1가 655-1835 4층)<br/>
+                        사업자번호: 720-81-00137 전화번호: 02-966-1028 / 전국대표번호: 1522-1028<br/>
+                        영남사무소: 부산광역시 수영구 광안2동 203-6 신화빌딩 5층 (TEL: 1599-1028/FAX: 051-754-0109)</p>
+
+                      <p>COPYRIGHT 2016 JUICY ALLRIGHTS RESERVED</p>
+                     
+                 </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

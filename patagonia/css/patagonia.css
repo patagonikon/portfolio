@@ -1,0 +1,1067 @@
+*{margin:0; padding:0;}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+.cf:after{
+    display: block;
+    content:"";
+    clear:both;
+}
+body{overflow-x: hidden;}
+
+
+h1#indi{
+	position:fixed;
+    left:10px;
+	bottom:10px;
+	background:rgba(255,255,255,0.8);
+	/*흰색  0.8 - 80% 투명도*/
+	z-index:100;
+}
+
+/* ================================================================================== */
+
+
+header{
+    width:100%;
+    height:150px;
+    margin:0 auto;
+}
+ 
+.mine_nav{
+    position: fixed;
+    max-width:1920px;
+    width:100%;
+    height:150px;
+    left:50%;
+    transform: translate(-50%,0);
+    /* border:1px solid red; */
+    box-sizing: border-box;
+    z-index: 10;
+    
+}
+
+.big1{
+    position: absolute;
+    width:190px;
+    height:50px;
+    bottom:13px;
+    left:20px;
+    top:40px;
+    /* border:1px solid turquoise; */
+}
+
+/* ==================================================햄버거 메뉴 시작*/
+
+
+.three{
+    position: absolute;
+    /* border:1px solid red; */
+    right:50px;
+    top:50%;
+    transform: translate(0,-80%);
+    z-index: 9999;
+    cursor: pointer;
+}
+
+
+
+.hamburger .line{
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    display: block;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+
+
+#hamburger-6.is-active{
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.6s;
+    transform: rotate(45deg);
+  }
+  
+  #hamburger-6.is-active .line:nth-child(2){
+    width:0px;
+  }
+  
+  #hamburger-6.is-active .line:nth-child(1),
+  #hamburger-6.is-active .line:nth-child(3){
+    transition-delay: 0.3s;
+  
+  }
+  
+  #hamburger-6.is-active .line:nth-child(1){
+    transform: translateY(8px);
+  }
+  #hamburger-6.is-active .line:nth-child(3){
+    transform: translateY(-8px) rotate(-90deg);
+  }
+
+
+  ::-webkit-scrollbar{width: 10px;}
+  ::-webkit-scrollbar-track {background-color:#f1f1f1;}
+  ::-webkit-scrollbar-thumb {background-color:#332a7b;}
+  ::-webkit-scrollbar-thumb:hover {background: #555;}
+  ::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment {
+  width:16px;height:16px;background:#332a7b;} 
+
+/* ==================================================햄버거 메뉴 끝 */
+
+/* ==================================================좌표 마우스 포인트 */
+#m1{
+    width:100px;
+    height:100px;
+    position: absolute;
+    top:0px;
+    left:0px;
+    margin-top:-35px;
+    margin-left:10px;
+}
+
+/* ==================================================좌표 마우스 포인트 */
+
+.mine_nav .ul_in {
+    position: absolute;
+    right:100px;
+    top:30px;
+    width:0;
+    height:72px;
+    transition: all 0.8s;
+    overflow:hidden;
+    visibility: hidden;
+}
+.mine_nav .ul_in.on{
+    width:83%; 
+    height:400px; 
+    visibility: visible;
+}
+.mine_nav .ul_in > ul{
+    position: absolute;
+    left:0;
+    top:0;
+    width:500px;
+    height:72px;
+    /* border:1px solid red; */
+    z-index: 11;
+}
+
+.mine_nav .ul_in > ul>li{
+    float:left;
+    margin-left:-33px;
+    font-size: 18px;
+    padding:10px 0;
+    font-weight: bold;
+    text-align: center;
+ 
+}
+
+.mine_nav .ul_in > ul>li:hover>a{
+    color:#332a7b;
+}
+
+.mine_nav .ul_in > ul>li>a{
+    display: block;
+    width:150px;
+    height:100%;
+    padding-left:5px;
+    line-height: 50px;
+    color:#555;
+    
+}
+
+.mine_nav .ul_in > ul>li>ul{
+    width:150px;
+    height:0;
+    /* border-right:1px solid #ccc; */
+    text-align: left;
+    z-index: 10;
+    margin-top:10px;
+    position: absolute;
+    overflow: hidden;
+
+}
+
+.mine_nav .ul_in > ul>li:nth-child(1)>ul{
+       transition: all 0.7s;
+}
+
+.mine_nav .ul_in > ul>li:nth-child(2)>ul{
+    transition: all 0.7s 0.1s;
+}
+
+.mine_nav .ul_in > ul>li:nth-child(3)>ul{
+    transition: all 0.7s 0.3s;
+}
+
+.mine_nav .ul_in > ul>li:nth-child(4)>ul{
+    transition: all 0.7s 0.4s;
+}
+
+
+.mine_nav .ul_in ul:hover>li>ul{
+    height:260px;
+}
+
+
+.mine_nav .ul_in > ul>li>ul>li{
+    text-align: center;
+    margin-top:2px;
+}
+
+
+.mine_nav .ul_in > ul>li>ul>li:hover>a{
+    color:#000;
+}
+
+.mine_nav .ul_in > ul ul a{
+    font-size: 14px;
+    display: block;
+    padding:5px 0;
+    padding-left:57px;
+    color:#332a7b;
+    opacity: 0.5;
+    text-align: left;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+/* =================================================================================1차 끝 */
+
+#pata_history{
+    width:1920px;
+    height:600px;
+    margin:80px auto;
+    /* border:1px solid red; */
+    transition: all 0.8s;
+    position: relative;
+
+}
+
+
+#pata_history .poto1{
+    position: absolute;
+    left:100%;
+    top:15%;
+    transition: all 1.7s;
+}
+
+
+#pata_history .poto1.active{
+    left:25%;
+    top:15%;
+}
+
+#pata_history .poto2{
+    position: absolute;
+    left:0%;
+    display: none;
+}
+
+#pata_history .poto1.active{
+    left:25%;
+    top:33%;
+}
+
+
+
+/* =================================================================================슬라이드 시작 */
+.slider{
+    margin:0 auto;
+    width:1920px;
+    height:600px;
+    padding-top:230px;
+    overflow: hidden;
+    /* border:1px solid red; */
+}
+
+.slider ul{
+    position: relative;
+    left:0; top:0px;
+    width:100%;
+    height:100%;
+}
+
+.slider ul li{
+    position: absolute;
+    width:100%;
+    height:100%;
+    left:100%;
+    top:-150px;
+   
+}
+
+.slider ul li:nth-child(1){left:0;}
+
+/* =================================================================================슬라이드 끝 */
+
+
+/* ============================================================패딩 마우스오버  시작*/
+#area1{
+	position: relative;
+    width:1920px;
+    margin:0 auto;
+	height:1300px;
+	/* border:1px solid red; */
+}
+
+
+#area1>div{
+    width:900px;
+	height:900px;
+    position:relative;
+    /* border:1px solid pink; */
+    margin:0 auto;
+    top:20%;
+	list-style:none;
+	overflow:hidden;
+}
+
+#area1>div >ul{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:10000px;
+}
+
+#area1>div >ul li{width:100%;}
+#area1>div >ul li img{width:100%;}
+
+/* ============================================================패딩 마우스오버  끝*/
+
+/* ============================================================마우스 스크롤 패치 시작*/
+.patch{
+    position: fixed;
+    width:150px;
+    height:150px;
+    /* border:1px solid red; */
+    z-index: 10;
+    right:1%;
+    top:-100%;
+    background:url(../img/patch.png)no-repeat;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+
+.patch.active{
+    top:88%;
+}
+
+.patch a{
+    display: block;
+    width:100%;
+    height:100%;
+}
+/* ============================================================마우스 스크롤 패치 끝*/
+
+/* ============================================================오른쪽 스크롤 다운 움직이는 글씨 시작*/
+.y_roll{
+    position: fixed;
+    width:30px;
+    height:250px;
+    /* border:1px solid red; */
+    right:5%;
+    top:40%;
+    animation:kaki 0.5s infinite alternate; 
+}
+
+@keyframes kaki{
+    0%{top:430px;}
+    100%{top:450px;}
+}
+
+.y_roll:after{
+    content: '';
+    position: absolute;
+    width:1px;
+    height:70px;
+    bottom:50px;
+    left:14px;
+    background-color: #bbb;
+    display: block;
+}
+
+.y_roll p{
+    writing-mode:vertical-lr; 
+    color:#bbb;
+    font-weight: bold;
+    margin-left:5px;
+}
+
+/* ============================================================오른쪽 스크롤 다운 움직이는 글씨 끝*/
+
+
+/*========================================================================뭐지? 시작*/
+
+#article1 .right1{
+    position: absolute;
+    width:300px;
+    height:600px;
+    top:30%;
+    right:-100%;
+    /* border:1px solid pink; */
+	transition:all 0.8s;
+}
+
+#article1 .right1.active{
+    right:12%;
+}
+
+
+#article1 h3{
+    font-size: 35px;
+    text-align: right;
+}
+
+#article1 p{
+    padding-top:30px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: right;
+}
+
+/*============================================================== MD초이스 부분*/
+.md_choice{
+    position: relative;
+    width:1920px;
+    height:400px;
+    /* border:1px solid red; */
+    margin:0 auto;
+}
+
+.left_choice{
+    position: relative;
+    width:1920px;
+    height:400px;
+    /* border:1px solid red; */
+    margin:0 auto;
+    /* display: none; */
+}
+
+.left_choice .on{
+    display: block;
+}
+
+
+.md_choice h2{
+    left:50%;
+    transform: translate(-50%,-100%);
+    position: absolute;
+}
+
+.md_choice h2:after{
+    content: "";
+    display: block;
+    width:35px;
+    height:5px;
+    background-color: #000;
+    margin:5px auto;
+}
+/*============================================================== MD초이스 부분*/
+
+
+/* =========================================================== 쪼매난 빨간 파랑 노랑 패딩 호버 */
+
+
+.pd{position: absolute;
+    top:10%;
+    width:600px;
+    height:320px;
+    transition: all 0.8s;
+    /* border:1px solid greenyellow; */
+    /* z-index: 10; */
+    cursor: pointer;
+}
+.left_choice:hover h3,p{
+    display: block;
+    transition: all 0.8s;}
+
+.pd img{
+  margin-left:5%;
+  /* border:1px solid red; */}
+
+
+.pd_t{
+    float:right;
+    width:330px;
+    height:300px;
+    visibility: hidden;
+    transition: all 0.8s 0.1s;
+    opacity: 0;
+    box-sizing: border-box;
+    padding:0 10px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    /* border:1px solid red; */
+    z-index: 10;
+}
+
+.pd:after{
+    content:"";
+    display: block;
+    position: absolute;
+    right:0;
+    top:0;
+    text-align: center;
+    line-height: 300px;
+    width:330px;
+    height:300px;
+    background: url(../img/patch.png) no-repeat 50% 50%;
+    opacity: 1;
+    transition: all 1s;
+  
+}
+
+.pd:hover:after{opacity: 0;}
+.pd:hover .pd_t{
+    visibility: visible;
+    opacity: 1;
+}
+.pd_t h3{
+    padding:35px 0 0;
+}
+.pd_t p{
+    padding-top:30px;
+}
+
+.left_choice .md1{left:2%;}
+.left_choice .md2{left:35%;}
+.left_choice .md3{left:67%;}
+
+
+/* ================================================== 쪼매난 빨간 파랑 노랑 패딩 호버 끝*/
+
+/* ================================================== 파타고니아 픽 시작*/
+
+#pick{
+    width:1920px;
+    height:1800px;
+    margin:0 auto;
+    /* border:2px solid springgreen; */
+    background-color: #f1f1f1;
+    padding-top:150px
+}
+
+.nice_pick{
+    width:1500px;
+    height:1700px;
+    margin:0 auto;
+    position: relative;
+    /* border:1px solid darkorchid; */
+}
+.nice_pick h2{
+    position: absolute;
+    padding-top:40px;
+    padding-left:5%;
+}
+
+/* ========================== 파타픽 레프트 시작 */
+.nice_left{
+    position: absolute;
+    width:421px;
+    height:730px;
+    /* border:1px solid red; */
+    margin-top:7%;
+    left:5%;
+}
+
+.nice_left h3{
+    padding:10px 0;
+    left:30%;
+}
+.nice_left p{
+    line-height: 25px;
+    font-size: 15px;
+    transition: all 3s;
+    opacity: 0;
+}
+
+
+/* ========================== 파타픽 레프트 끝*/
+
+/* ========================== 파타픽 미들 시작 */
+.nice_middle{
+    position: absolute;
+    width:421px;
+    height:421px;
+    /* border:1px solid red; */
+    margin-top:7%;
+    left:36%;
+}
+.nice_middle h3{
+    padding:10px 0;
+}
+.nice_middle p{
+    line-height: 25px;
+    font-size: 15px;
+    transition: all 3s 0.5s;
+    opacity: 0;
+}
+/* ========================== 파타픽 미들 끝 */
+
+/* ========================== 파타픽 라이트 시작*/
+.nice_right{
+    position: absolute;
+    width:421px;
+    height:730px;
+    /* border:1px solid red; */
+    margin-top:7%;
+    right:5%;
+}
+.nice_right h3{
+    padding:10px 0;
+}
+.nice_right p{
+    line-height: 25px;
+    font-size: 15px;
+    transition: all 3s 1s;
+    opacity: 0;
+}
+/* ========================== 파타픽 라이트 끝*/
+
+/***************************************************************1구간끝 */
+
+/* ========================== 파타픽 레프트222222 시작 */
+.nice_left2{
+    position: absolute;
+    width:421px;
+    height:730px;
+    /* border:1px solid red; */
+    margin-top:7%;
+    left:5%;
+    bottom:2%;
+}
+.nice_left2 h3{
+    padding:10px 0;
+}
+.nice_left2 p{
+    line-height: 25px;
+    font-size: 15px;
+    transition: all 2s;
+    opacity: 0;
+}
+/* ========================== 파타픽 레프트222222 끝*/
+/* ========================== 파타픽 미들222222 시작 */
+.nice_middle2{
+    position: absolute;
+    width:421px;
+    height:421px;
+    /* border:1px solid red; */
+    margin-top:7%;
+    left:36%;
+    top:40%;
+}
+.nice_middle2 h3{
+    padding:10px 0;
+}
+.nice_middle2 p{
+    line-height: 25px;
+    font-size: 15px;
+    transition: all 2s 1s;
+    opacity: 0;
+}
+/* ========================== 파타픽 미들222222 끝 */
+
+/* ========================== 파타픽 라이트222222 시작*/
+.nice_right2{
+    position: absolute;
+    width:421px;
+    height:730px;
+    /* border:1px solid red; */
+    margin-top:7%;
+    right:5%;
+    bottom:2%;
+}
+.nice_right2 h3{
+    padding:10px 0;
+}
+.nice_right2 p{
+    line-height: 25px;
+    font-size: 15px;
+    transition: all 3s 1.5s;
+    opacity: 0;
+}
+
+/* ========================== 파타픽 라이트222222 끝*/
+
+
+/* ================================================== 파타고니아 픽 끝*/
+
+
+
+
+
+
+/* ================================================== 갤러리 사진 시작부분*/
+
+#gallery{
+    width:1920px;
+    height:1100px;
+    /* border:1px solid red; */
+    margin:50px auto 0;
+    padding-top:250px;
+}
+
+
+/*인스타그램 타이틀*/
+.sns_title{
+    width:400px;
+    height:120px;
+    margin:0 auto 30px;
+    font-size: 25px;
+    /* border:1px solid red; */
+}
+.sns_title li{
+    float:left;
+    margin-left:20px;
+}
+.sns_title li:nth-child(1){
+    width:60px;
+    height:60px;
+    margin-top:25px;
+}
+.sns_title li:nth-child(2){
+    width:300px;
+    height:100px;
+    margin-top:0px;
+}
+.sns_title li:nth-child(2) img{
+    width:100%;
+    height:100%;
+}
+/*인스타그램 타이틀*/
+
+.container {
+    position: relative;
+    width:1520px;
+    height:300px;
+    margin:0 auto;
+    /* border:1px solid red; */
+    /* perspective: 1000px; */
+    }
+    
+.container > div{
+    position: relative;
+    float:left;
+    width:293px;
+    height:293px;
+    transform:none;
+    transition:all  0.5s;
+    margin-left:3px;
+    cursor: pointer;
+    /* border:1px solid red; */   
+}
+    
+.face {
+    position: absolute;
+    top:0px;
+    left:0px;
+    transition:all 0.5s;
+}
+    
+.container > div > div{
+    width:100%;
+    height:100%;
+}
+
+.container > div > div:nth-child(1){
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
+.container > div > div:nth-child(2){
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+
+.z {background: url(../img/patagonia_sns/sns1.png)no-repeat;}
+.y {background: url(../img/patagonia_sns/sns1-1.png)no-repeat;}
+
+.front {background: url(../img/patagonia_sns/sns2-1.jpg)no-repeat;}
+.back {background: url(../img/patagonia_sns/sns2.jpg)no-repeat;}
+
+.aa {background: url(../img/patagonia_sns/sns7-1.jpg)no-repeat;}
+.bb {background: url(../img/patagonia_sns/sns7.jpg)no-repeat;}
+
+.cc {background: url(../img/patagonia_sns/sns3-1.jpg)no-repeat;}
+.dd {background: url(../img/patagonia_sns/sns3.jpg)no-repeat;}
+
+.EE {background: url(../img/patagonia_sns/sns9-1.jpg)no-repeat;}
+.FF {background: url(../img/patagonia_sns/sns9.jpg)no-repeat;}
+
+
+.container>div:hover >div:nth-child(1){
+    transform:rotateY(180deg);
+    opacity: 0;
+}
+.container>div:hover >div:nth-child(2){
+    transform:rotateY(0deg);
+    opacity: 1;
+}
+    
+    /* ============================================================== 1번 줄 끝*/
+    
+.container2 {
+    position: relative;
+    width:1520px;
+    height:300px;
+    margin:0 auto;
+    /* border:1px solid red; */
+    /* perspective: 1000px; */
+    }
+    
+.container2 > div{
+    position: relative;
+    float:left;
+    width:293px;
+    height:293px;
+    transform:none;
+    transition:all  0.5s;
+    margin-left:3px;
+    cursor: pointer;
+    /* border:1px solid red; */   
+}
+.sns {
+    position: absolute;
+    top:0px;
+    left:0px;
+    transition:all 0.5s;
+}
+.container2 > div > div{
+    width:100%;
+    height:100%;
+}
+
+.container2 > div > div:nth-child(1){
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
+.container2 > div > div:nth-child(2){
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+.befor {background: url(../img/patagonia_sns/sns5-1.jpg)no-repeat;}
+.after {background: url(../img/patagonia_sns/sns5.jpg)no-repeat;}
+
+.befor1 {background: url(../img/patagonia_sns/sns10.jpg)no-repeat; }
+.after1 {background: url(../img/patagonia_sns/sns10-1.jpg)no-repeat;}
+
+.befor2 {background: url(../img/patagonia_sns/sns4-1.jpg)no-repeat;}
+.after2 {background: url(../img/patagonia_sns/sns4.jpg)no-repeat;}
+
+.befor3 {background: url(../img/patagonia_sns/sns8-1.jpg)no-repeat;}
+.after3 {background: url(../img/patagonia_sns/sns8.jpg)no-repeat;}
+
+.befor4 {background: url(../img/patagonia_sns/sns6-1.jpg)no-repeat;}
+.after4 {background: url(../img/patagonia_sns/sns6.jpg)no-repeat;}
+
+.container2>div:hover >div:nth-child(1){
+    transform:rotateY(180deg);
+    opacity: 0;
+}
+.container2>div:hover >div:nth-child(2){
+    transform:rotateY(0deg);
+    opacity: 1;
+}
+    
+        /* ========================================================= 2번 줄 끝*/
+    
+    
+.container3 {
+    position: relative;
+    width:1520px;
+    height:300px;
+    margin:0 auto;
+    /* border:1px solid red; */
+    /* perspective: 1000px; */
+}
+
+.container3 > div{
+    position: relative;
+    float:left;
+    width:293px;
+    height:293px;
+    transform:none;
+    transition:all  0.5s;
+    margin-left:3px;
+    cursor: pointer;
+    /* border:1px solid red; */
+}
+
+.pata {
+    position: absolute;
+    top:0px;
+    left:0px;
+    transition:all 0.5s;
+}
+
+.container3 > div > div{
+    width:100%;
+    height:100%;
+}
+
+.container3 > div > div:nth-child(1){
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
+.container3 > div > div:nth-child(2){
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+.gon1 {background: url(../img/patagonia_sns/sns11.jpg)no-repeat;}
+.ia2 {background: url(../img/patagonia_sns/sns11-1.jpg)no-repeat;}
+    
+.gon3 {background: url(../img/patagonia_sns/sns12-1.jpg)no-repeat;}
+.ia4 {background: url(../img/patagonia_sns/sns12.jpg)no-repeat;}
+
+.gon5 { background: url(../img/patagonia_sns/sns13-1.jpg)no-repeat;}
+.ia6 {background: url(../img/patagonia_sns/sns13.jpg)no-repeat;}
+
+.gon7 {background: url(../img/patagonia_sns/sns15.jpg)no-repeat;}
+.ia8 {background: url(../img/patagonia_sns/sns15-1.jpg)no-repeat;}
+
+.gon9 {background: url(../img/patagonia_sns/sns16.jpg)no-repeat;}
+.ia10 {background: url(../img/patagonia_sns/sns16-1.jpg)no-repeat;}
+
+.container3>div:hover >div:nth-child(1){
+    transform:rotateY(180deg);
+    opacity: 0;
+}
+.container3>div:hover >div:nth-child(2){
+    transform:rotateY(0deg);
+    opacity: 1;
+
+}
+/* ================================================== 갤러리 사진 끝부분*/
+
+/* ================================================== 풋터 시작*/
+footer{
+    width:1920px;
+    height:260px;
+    margin:0 auto;
+    /* border:1px solid red; */
+}
+
+.foot_title{
+    width:1920px;
+    margin:0 auto;
+    /* border:1px solid red; */
+}
+
+.footer_bottom{
+    width:1900px;
+    padding:10px;
+    height:230px;
+    padding-top:20px;
+    background-color: #f3f3f3;
+    /* border:1px solid red; */
+}
+
+.fix{
+    width:1320px;
+    margin:0 auto;
+    padding-top:10px;
+    cursor: pointer;
+}
+
+.fix>ul>li:nth-child(1){ margin-left:80px; }
+
+.img_c{
+    width:460px;
+    height:100px;
+    margin:0 auto;
+    padding:8px;
+    /* border:1px solid red; */
+}
+
+.img_c > img{ 
+    margin-top:30px;
+    margin-right:10px;
+    cursor: pointer; 
+    transform: scale(1);
+}
+
+.img_c img{ transition: all 0.5s; }
+.img_c img:hover{ transform: scale(1.3); }
+
+
+.footer_bottom ul{text-align: center;}
+
+.footer_bottom ul li{
+    float:left;
+    display: block;
+    padding:2px;
+    margin-left:20px;
+    color:#a8a8a8;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.fix2{
+    width:100%;
+    /* height:100%; */
+}
+/* ================================================== 풋터 끝*/
+
+
+/* ================================================== 유투브 비디오 */
+
+#video{
+    width:1160px;
+    height:315px;
+    margin:80px auto 0;
+    /* border:1px solid red; */
+}
+
+.pata_video1{
+    width:560px;
+    height:315px;
+    float:left;
+    margin-left:20px;
+}
+.pata_video2{
+    width:560px;
+    height:315px;
+    float:left;
+    margin-left:20px;
+}
+/*인스타그램 타이틀*/
+
+.video_campe{
+    width:400px;
+    height:120px;
+    margin:0 auto 30px;
+    font-size: 25px;
+    display: block;
+    /* border:1px solid red; */
+}
+
+.video_campe li{
+    float:left;
+    margin-left:20px;
+}
+.video_campe li:nth-child(1){
+    width:60px;
+    height:60px;
+    margin-top:25px;
+}
+.video_campe li:nth-child(2){
+    width:300px;
+    height:100px;
+    margin-top:0px;
+}
+.video_campe li:nth-child(2) img{
+    width:100%;
+    height:100%;
+}
+/*인스타그램 타이틀*/
+
+/* ================================================== 유투브 비디오 */
