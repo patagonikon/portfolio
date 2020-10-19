@@ -396,9 +396,16 @@ header{
 
 /*========================================================================뭐지? 시작*/
 
+
+.right0 > h3{
+    position: absolute;
+    left:37%;
+}
+
+
 #article1 .right1{
     position: absolute;
-    width:300px;
+    width:350px;
     height:600px;
     top:30%;
     right:-100%;
@@ -455,9 +462,9 @@ header{
 .md_choice h2:after{
     content: "";
     display: block;
-    width:35px;
+    width:100px;
     height:5px;
-    background-color: #000;
+    background-color: #6047c2;
     margin:5px auto;
 }
 /*============================================================== MD초이스 부분*/
