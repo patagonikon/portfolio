@@ -105,11 +105,9 @@ header{
     position: fixed;
     z-index: 5;
     right:2%;
-    top:16%;
+    top:20%;
     cursor: pointer;
 }
-
-
 
 .yogerpresso_logo{
     position: absolute;
@@ -166,11 +164,9 @@ header{
     display: none;
 }
 
-
 .mine_nav>ul:hover>li>ul{
     display: block;
 }
-
 
 .mine_nav>ul>li>ul>li{
     text-align: center;
@@ -179,7 +175,8 @@ header{
 
 
 .mine_nav>ul>li>ul>li:hover>a{
-    color:#000;
+    color:#a91d31;
+    font-size: 17px;
 }
 
 .mine_nav ul ul a{
@@ -187,7 +184,7 @@ header{
     display: block;
     padding:5px 0;
     padding-left:15px;
-    color:#bbb;
+    color:#333;
     opacity: 0.5;
 }
 
@@ -204,7 +201,7 @@ header{
 
 .mine_nav > ul:hover + .shadow{
     height:260px;
-    border-bottom:1px solid #333;
+    border-bottom:1px solid #eee;
 }
 
 /* ==========================================================슬라이드바 시작 */
@@ -278,7 +275,7 @@ header{
 }
 .new p{
     position: absolute;
-    top:-19px;
+    top:-15px;
     left:7px;
 }
 
@@ -319,7 +316,7 @@ header{
 }
 .new2 p{
     position: absolute;
-    top:-19px;
+    top:-15px;
     left:7px;
     color:#fff;
 }
@@ -366,6 +363,7 @@ header{
     font-size: 40px;
     color:#666;
 }
+
 .avo1 > p{
     position: absolute;
     top:41.5%;
@@ -379,12 +377,25 @@ header{
     height:40px;
     top:50%;
     left:15%;
-    background-color: #c0a88b;
+    background-color: #fbb637;
     cursor: pointer;
     transition: all 0.3s;
     border-radius: 20px;
     line-height: 22px;
 }
+.mini_avo > a{
+    display: block;
+    width:80px;
+    height:30px;
+    margin-left:30px;
+    line-height: 40px;
+    text-decoration: none;
+    color:#fff;
+}
+
+
+
+
 .mini_avo > p{
     color:#fff;
     text-align: center;
@@ -392,7 +403,7 @@ header{
     
 }
 .mini_avo:hover{
-    background-color:#545d58;
+    background-color:#b77b97;
     transform: scale(1.2);
 }
 /*이달의 신메뉴*/
@@ -462,12 +473,14 @@ header{
     font-size: 40px;
     color:#666;
 }
+
 .avo2 > p{
     position: absolute;
     top:41.5%;
     left:9%;
     font-size: 18px;
     color:#666;
+
 }
 .mini_avo2{
     position: relative;
@@ -481,6 +494,16 @@ header{
     border-radius: 20px;
     line-height: 22px;
 }
+.mini_avo2 > a{
+    display: block;
+    width:80px;
+    height:30px;
+    margin-left:40px;
+    line-height: 40px;
+    text-decoration: none;
+    color:#fff;
+}
+
 .mini_avo2 > p{
     color:#fff;
     text-align: center;

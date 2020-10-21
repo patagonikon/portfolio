@@ -20,8 +20,6 @@ $(function(){
         return false;        
     });
 
-
-
     $('.top100 > ul > li').click(function(){
 
         var i = $(this).index();
@@ -37,6 +35,20 @@ $(function(){
 
     });
 
+    // 
+    $('.goods_list > p').click(function(){
+        var ko = $(this).index();
+
+        $('.goods_list1 > div').removeClass('on');
+        $('.goods_list1 > div').eq(ko).addClass('on');
+
+    return false;
+
+    });
+
+
+
+
 
     //미니 슬라이드
     var z = 0
@@ -48,7 +60,6 @@ $(function(){
         if(z==4){
             z=0;
         }
-        
         $('.slide > li').eq(z-1).css('left',0).animate({'left':'-100%'},2000);
         $('.slide > li').eq(z).css('left','100%').animate({'left':0},2000);
 
@@ -66,11 +77,11 @@ $(function(){
 
     //==========================================블릿클릭
 
-   $('.point > li > a').click(function(){
+//    $('.point > li > a').click(function(){
 
-    return false;
+//     return false;
 
-    });
+//     });
 
     $('.point > ul > li').click(function(){
         z = $(this).index();
@@ -120,7 +131,7 @@ $(function(){
 		var time = $('.playTime').text().split(':');
 		time = Number((time[0]*60))+Number(time[1]);
 		
-		console.log(time);	
+		//console.log(time);	
 	
 			
 		$({percent:00}).animate({percent:time},{
@@ -128,7 +139,7 @@ $(function(){
 			easing:'linear',
 			progress:function(){
 				var now = Math.floor(this.percent);
-				console.log(now);
+				//console.log(now);
 				for(var n=0; n<3; n++){
 					if(now < 60*(n+1) && now >= 60*n){
 						$('.play_ing .minute').text("0"+n);
